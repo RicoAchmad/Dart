@@ -1,9 +1,12 @@
 import 'dart:io';
 
 void main() {
-    stdout.write("Masukan Nama Anda: ");
-    String? inputName = stdin.readLineSync();
-   
+
+    stdout.write("Masukan Nama Depan: ");
+    String? inputText1 = stdin.readLineSync();
+
+    stdout.write("Masukan Nama Belakang: ");
+    String? inputText2 = stdin.readLineSync();
     
     stdout.write("Masukan Umur Anda : ");
     String? inputUmur = stdin.readLineSync();
@@ -20,9 +23,11 @@ void main() {
     String? inputAlamat = stdin.readLineSync();
   
 
- print("Nama  : "+ inputName!); 
- print("Umur  : "+ inputUmur!);
- print("Jenis Kelamin  : "+ inputJK!);
- print("Tinggi Badan  : "+ inputTB!);
- print("Alamat  : "+ inputAlamat!);
+    print("Nama Depan "+ inputText1!);
+    print("Nama Belakang "+ inputText2!);
+    print("Nama Lengkap: "+inputText1+" "+inputText2);
+    print("Umur  : "+ inputUmur!);
+    print("Jenis Kelamin  : "+ inputJK!);
+    print("Tinggi Badan  : "+ inputTB!);
+    print("Alamat  : "+ inputAlamat!);
 }
